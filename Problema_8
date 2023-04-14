@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema_8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Opciones");
+            Console.WriteLine("1.Area del cuadrado");
+            Console.WriteLine("2.Area del triangulo");
+            Console.WriteLine("3.Area del rombo");
+            Console.WriteLine("4.Area del rectangulo");
+            Console.WriteLine("5.Area de un pentagono");
+            Console.WriteLine("6.Area de un trapecio");
+            Console.WriteLine("7.Area de un circulo");
+            int opcion=int.Parse(Console.ReadLine());
+            switch(opcion)
+            {
+                case 1:
+                    Console.WriteLine("Ingrese un lado");
+                    int lado=int.Parse(Console.ReadLine());
+                    int area = lado * lado;
+                    Console.WriteLine("El area del cuadrado es: " + area);
+                    break;
+
+                case 2:
+                    Console.WriteLine("Ingrese la base");
+                    int bas =int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ingrese la altura");
+                    int altura=int.Parse(Console.ReadLine());
+                    break;
+
+                case 3:
+                    break;
+
+                case 4:
+                    break;
+
+                case 5:
+                    break;
+
+                case 6:
+                    break;
+
+                case 7:
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+}
