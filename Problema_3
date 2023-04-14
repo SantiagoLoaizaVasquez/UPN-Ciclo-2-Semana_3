@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PROBLEMA_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string pago;
+            Console.WriteLine("Ingrese su forma de pago");
+            pago = Console.ReadLine();
+            if (pago == "EFECTIVO")
+            {
+                Console.WriteLine("Metodo de pago en efectivo");
+            }
+            else if (pago == "TARJETA")
+            {
+                Console.WriteLine("Metodo de pago es con tarjeta");
+            }
+            else
+            {
+                Console.WriteLine("Incorrecto");
+            }
+            Console.ReadLine(); 
+        }
+    }
+}
