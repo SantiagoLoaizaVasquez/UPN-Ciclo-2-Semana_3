@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string cadena;
+            Console.WriteLine("Ingrese el texto: ");
+            cadena= Console.ReadLine();
+            if (cadena == "gasolina")
+            {
+                Console.WriteLine("El precio del galon es de 17 soles");
+            }
+            else if (cadena == "gas")
+            {
+                Console.WriteLine("El precio del gaon es 8 soles");
+            }
+            else
+            {
+                Console.WriteLine("Dato ingresado incorrecto");
+            }
+            Console.ReadLine();
+        }
+    }
+}
