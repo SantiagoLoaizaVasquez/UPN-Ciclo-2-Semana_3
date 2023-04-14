@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PROBLEMA_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sueldo;
+            Console.WriteLine("Ingrese su sueldo");
+            sueldo = int.Parse(Console.ReadLine());
+            if (sueldo < 0)
+            {
+                Console.WriteLine("SUELDO INCORRECTO");
+            }
+            else if (sueldo >= 0 && sueldo<=900)
+            {
+                Console.WriteLine("SUELDO MENOR");
+            }
+            else if (sueldo > 900 && sueldo <= 1250)
+            {
+                Console.WriteLine("SUELDO BASICO");
+            }
+            else if (sueldo > 1250 && sueldo <= 1500)
+            {
+                Console.WriteLine("SUELDO REGULAR");
+            }
+            else if (sueldo > 1500 && sueldo <= 2500)
+            {
+                Console.WriteLine("SUELDO BUENO");
+            }
+            else
+            {
+                Console.WriteLine("SUELDO EXCELENTE");
+            }
+        }
+    }
+}
