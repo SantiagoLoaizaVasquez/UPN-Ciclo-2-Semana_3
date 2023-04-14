@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace problema_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1, n2, n3;
+
+            Console.WriteLine("Ingrese primer lado: ");
+            n1=int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese segundo lado: ");
+            n2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese tercer lado: ");
+            n3 = int.Parse(Console.ReadLine());
+            if (n1==n2 && n1 == n3)
+            {
+                Console.WriteLine("TRIANGULO EQUILATERO");
+            }
+            else if (n1 == n2 || n1 == n3 || n2==n3)
+            {
+                Console.WriteLine("TRIANGULO ISOSCELES");
+            }
+            else
+            {
+                Console.WriteLine("TRIANGULO ESCALENO");
+            }
+            Console.ReadLine(); 
+        }
+
+    }
+}
