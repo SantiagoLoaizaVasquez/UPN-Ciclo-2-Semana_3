@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PROBLEMA_7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int opcion;
+            int n1, n2;
+            Console.WriteLine("Ingrese el primer numero");
+            n1=int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero");
+            n2=int.Parse(Console.ReadLine());
+            Console.WriteLine("***OPCIONES***");
+            Console.WriteLine("1.SUMA");
+            Console.WriteLine("2.RESTA");
+            Console.WriteLine("3.MULTIPLICACION");
+            Console.WriteLine("4.DIVISION");
+            opcion= int.Parse(Console.ReadLine());
+            switch(opcion)
+            {
+                case 1:
+                    int suma = n1 + n2;
+                    Console.WriteLine(suma);
+                    break;
+                case 2:
+                    int resta = n1 - n2;
+                    Console.WriteLine(resta);
+                    break;
+                case 3:
+                    int multi = n1 * n2;
+                    Console.WriteLine(multi);
+                    break;
+                case 4:
+                    int divi = n1 / n2;
+                    Console.WriteLine(divi);
+                    break;
+                default:
+                    Console.WriteLine("Valor incorrecto");
+                    break;
+            }
+            Console.ReadLine();
+        }   
+    }
+}
